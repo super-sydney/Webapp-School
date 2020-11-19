@@ -10,27 +10,26 @@
 </head>
 
 <body>
-
   <div data-role="page" id="pageone">
-    <div data-role="header" id="header">
+    <div data-role="header" id="header" data-theme="b">
       <h1>Home</h1>
     </div>
 
     <div data-role="main" class="ui-content">
       <p>Welkom op mijn pagina! Hieronder kun je navigeren naar andere paginas.</p>
-      <a href="page2.html" class="ui-btn ui-corner-all">Zoeken</a>
-      <a href="page3.html" class="ui-btn ui-corner-all">Informatie</a>
-      <a href="page4.html" class="ui-btn ui-corner-all">Favorieten</a>
-      <a href="page5.html" class="ui-btn ui-corner-all">Contact</a>
+      <a data-ajax="false" href="page2.html" class="ui-btn ui-corner-all">Zoeken</a>
+      <a data-ajax="false" href="page3.html" class="ui-btn ui-corner-all">Informatie</a>
+      <a data-ajax="false" href="page4.html" class="ui-btn ui-corner-all">Favorieten</a>
+      <a data-ajax="false" href="page5.html" class="ui-btn ui-corner-all">Contact</a>
     </div>
 
-    <div class="ui-bar ui-bar-b" data-role="footer" id="footer">
+    <div class="ui-bar ui-bar-b" data-role="footer" data-theme="b" data-position="fixed" id="footer">
       <div data-role="navbar">
         <ul>
-          <li><a href="page2.html" class="ui-btn ui-btn-inline ui-icon-search ui-btn-icon-left ui-corner-all">Zoeken</a></li>
-          <li><a href="page3.html" class="ui-btn ui-btn-inline ui-icon-info ui-btn-icon-left ui-corner-all">Info</a></li>
-          <li><a href="page4.html" class="ui-btn ui-btn-inline ui-icon-star ui-btn-icon-left ui-corner-all">Favorieten</a></li>
-          <li><a href="page5.html" class="ui-btn ui-btn-inline ui-icon-phone ui-btn-icon-left ui-corner-all">Contact</a></li>
+          <li><a data-ajax="false" href="page2.html" class="ui-btn ui-icon-search ui-btn-icon-left ui-corner-all">Zoeken</a></li>
+          <li><a data-ajax="false" href="page3.html" class="ui-btn ui-icon-info ui-btn-icon-left ui-corner-all">Info</a></li>
+          <li><a data-ajax="false" href="page4.html" class="ui-btn ui-icon-star ui-btn-icon-left ui-corner-all">Favorieten</a></li>
+          <li><a data-ajax="false" href="page5.html" class="ui-btn ui-icon-phone ui-btn-icon-left ui-corner-all">Contact</a></li>
         </ul>
       </div>
     </div>

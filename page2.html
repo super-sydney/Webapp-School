@@ -10,70 +10,50 @@
 
 <body>
   <div data-role="page" id="pagetwo">
-    <div data-role="header" id="header">
-      <h1>Zoeken</h1>
-      <a href="#panel13" data-role="button" data-theme="b" data-icon="bars" data-iconpos="notext" class="ui-btn-left ui-btn ui-corner-all ui-icon-bars ui-btn-icon-notext ui-shadow ui-btn-inline"></a>
+    <div data-role="header" data-theme="b" id="header">
+      <h1>Zoeken</h1> <a data-ajax="false" href="#panel" data-role="button" class="ui-btn ui-corner-all ui-icon-bars ui-btn-icon-notext"></a>
     </div>
 
     <div data-role="main" class="ui-content">
       <script>
-        function myFunction() {
-          // Declare variables
-          var input, filter, ul, li, a, i, txtValue;
-          input = document.getElementById('myInput');
-          filter = input.value.toUpperCase();
-          ul = document.getElementById("myUL");
-          li = ul.getElementsByTagName('li');
-
-          // Loop through all list items, and hide those who don't match the search query
-          for (i = 0; i < li.length; i++) {
-            a = li[i].getElementsByTagName("a")[0];
-            txtValue = a.textContent || a.innerText;
-            if (txtValue.toUpperCase().indexOf(filter) > -1) {
-              li[i].style.display = "";
-            } else {
-              li[i].style.display = "none";
-            }
-          }
+        function updateSearch() {
+          for (var e, t = document.getElementById("myInput").value.toUpperCase(), n = document.getElementById("myUL").getElementsByTagName("li"), a = 0; a < n.length; a++) - 1 < ((e = n[a].getElementsByTagName("a")[0]).textContent || e.innerText)
+            .toUpperCase().indexOf(t) ? n[a].style.display = "" : n[a].style.display = "none"
         }
       </script>
-      <h2>Hier kun je in een lijstje van namen zoeken naar de voornamen van (denkbeeldige) personen.</h2>
-      <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names..">
+      <h2>Hier kun je in een lijstje van namen zoeken naar de voornamen van (denkbeeldige) personen.</h2> <input type="text" id="myInput" onkeyup="updateSearch()" placeholder="Search for names...">
       <ul id="myUL">
-        <li><a href="#">Adele Amersfoort</a></li>
-        <li><a href="#">Agnes Axel</a></li>
-
-        <li><a href="#">Billy Bobbens</a></li>
-        <li><a href="#">Bob de Bouwer</a></li>
-
-        <li><a href="#">Cinerella Clean</a></li>
-        <li><a href="#">Calvin Klein</a></li>
-        <li><a href="#">Chris Maan</a></li>
+        <li><a data-ajax="false" href="#">Adele Amersfoort</a></li>
+        <li><a data-ajax="false" href="#">Agnes Axel</a></li>
+        <li><a data-ajax="false" href="#">Billy Bobbens</a></li>
+        <li><a data-ajax="false" href="#">Bob de Bouwer</a></li>
+        <li><a data-ajax="false" href="#">Cinerella Clean</a></li>
+        <li><a data-ajax="false" href="#">Calvin Klein</a></li>
+        <li><a data-ajax="false" href="#">Chris Maan</a></li>
       </ul>
-      <div data-role="panel" id="panel13" data-theme="b" data-display="overlay" data-swipe-close="true" data-position-fixed="true" class="ui-panel ui-panel-position-left ui-panel-display-overlay">
+      <div data-role="panel" id="panel" data-theme="b" data-display="overlay" data-swipe-close="true" data-position-fixed="true" class="ui-panel ui-panel-position-left">
         <div class="ui-panel-inner">
-          <a href="#pagetwo" data-rel="close" class="ui-btn ui-btn-left">X</a>
-          <br></br>
+          <a data-ajax="false" href="#" data-rel="close" class="ui-btn ui-btn-left">X</a><br></br>
           <div data-role="collapsible" id="collapse">
             <h2>E</h2>
             <ul data-role="listview">
-              <li><a href="index.html" class="ui-btn ui-corner-all ui-icon-home ui-btn-icon-left">Go to Homepage</a></li>
-              <li><a href="page3.html" class="ui-btn ui-corner-all ui-icon-info ui-btn-icon-left">Go to Page Three</a></li>
-              <li><a href="page4.html" class="ui-btn ui-corner-all ui-icon-star ui-btn-icon-left">Go to Page Four</a></li>
-              <li><a href="page5.html" class="ui-btn ui-corner-all ui-icon-phone ui-btn-icon-left">Go to Page Five</a></li>
+              <li><a data-ajax="false" href="index.html" class="ui-btn ui-corner-all ui-icon-home ui-btn-icon-left">Go to Homepage</a></li>
+              <li><a data-ajax="false" href="page3.html" class="ui-btn ui-corner-all ui-icon-info ui-btn-icon-left">Go to Page Three</a></li>
+              <li><a data-ajax="false" href="page4.html" class="ui-btn ui-corner-all ui-icon-star ui-btn-icon-left">Go to Page Four</a></li>
+              <li><a data-ajax="false" href="page5.html" class="ui-btn ui-corner-all ui-icon-phone ui-btn-icon-left">Go to Page Five</a></li>
             </ul>
           </div>
         </div>
       </div>
     </div>
 
-    <div class="ui-bar ui-bar-b" data-role="footer" id="footer">
+    <div class="ui-bar" data-role="footer" data-theme="b" data-position="fixed" id="footer">
       <div data-role="navbar">
         <ul>
-          <li><a href="index.html" class="ui-btn ui-btn-inline ui-icon-home ui-btn-icon-left ui-corner-all">Home</a></li>
-          <li><a href="page3.html" class="ui-btn ui-btn-inline ui-icon-info ui-btn-icon-left ui-corner-all">Info</a></li>
-          <li><a href="page4.html" class="ui-btn ui-btn-inline ui-icon-star ui-btn-icon-left ui-corner-all">Favorieten</a></li>
-          <li><a href="page5.html" class="ui-btn ui-btn-inline ui-icon-phone ui-btn-icon-left ui-corner-all">Contact</a></li>
+          <li><a data-ajax="false" href="index.html" class="ui-btn ui-icon-home ui-btn-icon-left ui-corner-all">Home</a></li>
+          <li><a data-ajax="false" href="page3.html" class="ui-btn ui-icon-info ui-btn-icon-left ui-corner-all">Info</a></li>
+          <li><a data-ajax="false" href="page4.html" class="ui-btn ui-icon-star ui-btn-icon-left ui-corner-all">Favorieten</a></li>
+          <li><a data-ajax="false" href="page5.html" class="ui-btn ui-icon-phone ui-btn-icon-left ui-corner-all">Contact</a></li>
         </ul>
       </div>
     </div>
