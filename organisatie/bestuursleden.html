@@ -3,7 +3,7 @@
 <head>
   <link rel="icon" href="img/xeniosLogo.png">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../style.css">
   <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
   <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
   <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
@@ -11,17 +11,21 @@
 
 <body>
   <div data-role="page" id="pagetwo">
+    <!-- Begin header-->
     <div data-role="header" data-theme="b" id="header">
       <h1>Bestuursleden</h1> <a data-ajax="false" href="#panel" data-role="button" class="ui-btn ui-corner-all ui-icon-bars ui-btn-icon-notext"></a>
     </div>
-
+    <!-- Einde header-->
+    <!-- Begin main-->
     <div data-role="main" class="ui-content">
+      <!-- Script voor zoekfunctie-->
       <script>
         function updateSearch() {
           for (var e, t = document.getElementById("myInput").value.toUpperCase(), n = document.getElementById("myUL").getElementsByTagName("li"), a = 0; a < n.length; a++) - 1 < ((e = n[a].getElementsByTagName("a")[0]).textContent || e.innerText)
             .toUpperCase().indexOf(t) ? n[a].style.display = "" : n[a].style.display = "none"
         }
       </script>
+      <!-- Begin zoeken naar leden-->
       <h2>Hier kun je in een lijstje van namen zoeken naar de voornamen van (denkbeeldige) personen.</h2> <input type="text" id="myInput" onkeyup="updateSearch()" placeholder="Search for names...">
 
       <div>
@@ -35,19 +39,21 @@
           <li><a data-ajax="false">Chris Maan</a></li>
         </ul>
       </div>
-      <div data-role="panel" id="panel" data-theme="b" data-display="overlay" data-swipe-close="true" data-position-fixed="true" class="ui-panel ui-panel-position-left">
-        <div class="ui-panel-inner">
+      <!-- Einde zoeken naar leden-->
+      <!-- Begin hamburgermenu panel-->
+      <div data-role="panel" id="panel" data-theme="b" data-display="overlay" data-swipe-close="true" data-position-fixed="true" class="ui-panel ui-panel-position-left" style="width: 325px;">
+        <div class=" ui-panel-inner">
           <a data-ajax="false" href="#" data-rel="close" class="ui-btn ui-btn-left">X</a><br></br>
 
           <ul data-role="listview">
-            <li><a data-ajax="false" href="index.html" class="ui-btn ui-corner-all ui-icon-home ui-btn-icon-left">Home</a></li>
+            <li><a data-ajax="false" href="../index.html" class="ui-btn ui-corner-all ui-icon-home ui-btn-icon-left">Home</a></li>
+            <!-- Begin buitenste collapsible-->
             <div data-role="collapsible" class="ui-listview-outer">
-              <h2>
-                Hockey
-                <h2>
+              <h2>Hockey<h2>
                   <ul data-role="listview" data-inset="true">
                     <li><a data-ajax="false" href="../hockey/teams.html" class="ui-btn ui-corner-all ui-icon-info ui-btn-icon-left">Teams</a></li>
                     <li><a data-ajax="false" href="../hockey/wedstrijdschemas.html" class="ui-btn ui-corner-all ui-icon-info ui-btn-icon-left">Wedstrijdschemas</a></li>
+                    <!-- Begin binnenste collapsible-->
                     <div data-role="collapsible" class="ui-listview-outer">
                       <h2>Lidmaatschap</h2>
                       <ul data-role="listview" data-inset="true">
@@ -56,8 +62,11 @@
                         <li><a data-ajax="false" href="../hockey/lidmaatschap/voorwaarden.html" class="ui-btn ui-corner-all ui-icon-info ui-btn-icon-left">Algemene Voorwaarden</a></li>
                       </ul>
                     </div>
+                    <!-- Einde binnenste collapsible-->
                   </ul>
             </div>
+            <!-- Einde buitenste collapsible-->
+            <!-- Begin buitenste collapsible-->
             <div data-role="collapsible" class="ui-listview-outer">
               <h2>Organisatie</h2>
               <div data-role="listview" data-inset="true">
@@ -65,13 +74,16 @@
                 <li><a data-ajax="false" href="../organisatie/bestuursleden.html" class="ui-btn ui-corner-all ui-icon-star ui-btn-icon-left">Bestuursleden</a></li>
               </div>
             </div>
+            <!-- Einde buitenste collapsible-->
             <li><a data-ajax="false" href="../sponsors.html" class="ui-btn ui-corner-all ui-icon-phone ui-btn-icon-left">Sponsors</a></li>
             <li><a data-ajax="false" href="../contact.html" class="ui-btn ui-corner-all ui-icon-phone ui-btn-icon-left">Contact</a></li>
           </ul>
         </div>
       </div>
+      <!-- Einde hamburgermenu panel-->
     </div>
-
+    <!-- Einde main -->
+    <!-- Begin footer -->
     <div data-role="footer" data-theme="b" data-position="fixed" id="footer">
       <div data-role="navbar">
         <ul>
@@ -82,6 +94,7 @@
         </ul>
       </div>
     </div>
+    <!-- Einde footer -->
   </div>
 </body>
 

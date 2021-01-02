@@ -12,18 +12,21 @@
 
 <body>
   <div data-role="page" id="pageone">
-
+    <!-- Begin header -->
     <div data-role="header" id="header" data-theme="b">
       <h1>Home</h1> <a data-ajax="false" href="#panel" data-role="button" data-zoeken.html="b" data-icon="bars" data-iconpos="notext" class="ui-btn-left ui-btn ui-corner-all ui-icon-bars ui-btn-icon-notext ui-shadow ui-btn-inline"></a>
-
     </div>
-
+    <!-- Einde header-->
+    <!-- Begin main -->
     <div data-role="main" class="ui-content">
-      <div data-role="panel" id="panel" data-theme="b" data-display="overlay" data-swipe-close="true" data-position-fixed="true" class="ui-panel ui-panel-position-left">
-        <div class="ui-panel-inner">
+
+      <!-- Begin hamburgermenu panel -->
+      <div data-role="panel" id="panel" data-theme="b" data-display="overlay" data-swipe-close="true" data-position-fixed="true" class="ui-panel ui-panel-position-left" style="width: 325px;">
+        <div class=" ui-panel-inner">
           <a data-ajax="false" href="#" data-rel="close" class="ui-btn ui-btn-left">X</a><br></br>
           <ul data-role="listview">
             <li><a data-ajax="false" href="index.html" class="ui-btn ui-corner-all ui-icon-home ui-btn-icon-left">Home</a></li>
+            <!-- Buitenste collapsible-->
             <div data-role="collapsible" class="ui-listview-outer">
               <h2>
                 Hockey
@@ -31,28 +34,36 @@
                   <ul data-role="listview" data-inset="true">
                     <li><a data-ajax="false" href="hockey/teams.html" class="ui-btn ui-corner-all ui-icon-info ui-btn-icon-left">Teams</a></li>
                     <li><a data-ajax="false" href="hockey/wedstrijdschemas.html" class="ui-btn ui-corner-all ui-icon-info ui-btn-icon-left">Wedstrijdschemas</a></li>
+                    <!-- Binnenste collapsibel-->
                     <div data-role="collapsible" class="ui-listview-outer">
                       <h2>Lidmaatschap</h2>
                       <ul data-role="listview" data-inset="true">
-                        <li><a data-ajax="false" href="informatie.html" class="ui-btn ui-corner-all ui-icon-info ui-btn-icon-left">Informatie</a></li>
-                        <li><a data-ajax="false" href="opzeggen.html" class="ui-btn ui-corner-all ui-icon-info ui-btn-icon-left">Opzeggen</a></li>
-                        <li><a data-ajax="false" href="voorwaarden.html" class="ui-btn ui-corner-all ui-icon-info ui-btn-icon-left">Algemene Voorwaarden</a></li>
+                        <li><a data-ajax="false" href="hockey/lidmaatschap/informatie.html" class="ui-btn ui-corner-all ui-icon-info ui-btn-icon-left">Informatie</a></li>
+                        <li><a data-ajax="false" href="hockey/lidmaatschap/opzeggen.html" class="ui-btn ui-corner-all ui-icon-info ui-btn-icon-left">Opzeggen</a></li>
+                        <li><a data-ajax="false" href="hockey/lidmaatschap/voorwaarden.html" class="ui-btn ui-corner-all ui-icon-info ui-btn-icon-left">Algemene Voorwaarden</a></li>
                       </ul>
                     </div>
+                    <!-- Einde binnenste collapsible-->
                   </ul>
             </div>
+            <!--Einde buitenste collapsible -->
+            <!-- Begin buitenste collapsible-->
             <div data-role="collapsible" class="ui-listview-outer">
               <h2>Organisatie</h2>
+
               <div data-role="listview" data-inset="true">
                 <li><a data-ajax="false" href="organisatie/huisregels.html" class="ui-btn ui-corner-all ui-icon-star ui-btn-icon-left">Huisregels</a></li>
                 <li><a data-ajax="false" href="organisatie/bestuursleden.html" class="ui-btn ui-corner-all ui-icon-star ui-btn-icon-left">Bestuursleden</a></li>
               </div>
             </div>
+            <!-- Einde buitenste collapsible-->
             <li><a data-ajax="false" href="sponsors.html" class="ui-btn ui-corner-all ui-icon-phone ui-btn-icon-left">Sponsors</a></li>
             <li><a data-ajax="false" href="contact.html" class="ui-btn ui-corner-all ui-icon-phone ui-btn-icon-left">Contact</a></li>
           </ul>
         </div>
       </div>
+      <!-- Einde hamburgermenu panel -->
+      <!-- Begin tekst -->
       <p>
         <bold>Welkom</bold><br>
         bij de webapp van hockeyclub Xenios!<br><br>
@@ -60,8 +71,10 @@
         zowel de hockeytalenten als voor de leden die hockeyen voor de lol van de sport, de teambeleving en de leuke sfeer. Iedereen die wil leren hockeyen is welkom bij Xenios en zal de mogelijkheden krijgen zoveel mogelijk uit de sport te halen
         binnen het eigen niveau. De deur staat open voor de beginnende hockeyer, de meer ervaren jong volwassenen als de ouder die nog steeds een sportieve uitdaging zoekt op het hockeyveld.
       </p>
+      <!-- Einde tekst -->
     </div>
-
+    <!-- Einde main-->
+    <!-- Begin footer-->
     <div data-role="footer" data-theme="b" data-position="fixed" id="footer">
       <div data-role="navbar">
         <ul>
@@ -72,6 +85,7 @@
         </ul>
       </div>
     </div>
+    <!-- Einde footer -->
   </div>
 </body>
 

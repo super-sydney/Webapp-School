@@ -11,16 +11,59 @@
 
 <body>
   <div data-role="page" id="pagefive">
+    <!-- Begin header -->
     <div data-role="header" data-theme="b" id="header">
       <h1>Lidmaatschap Informatie</h1> <a data-ajax="false" href="#panel" data-role="button" data-theme="b" data-icon="bars" data-iconpos="notext" class="ui-btn-left ui-btn ui-corner-all ui-icon-bars ui-btn-icon-notext ui-shadow ui-btn-inline"></a>
     </div>
-
+    <!-- Einde header -->
+    <!-- Begin main -->
     <div data-role="main" class="ui-content">
+      <!-- Begin hamburgermenu panel-->
+      <div data-role="panel" id="panel" data-theme="b" data-display="overlay" data-swipe-close="true" data-position-fixed="true" class="ui-panel ui-panel-position-left" style="width: 325px;">
+        <div class=" ui-panel-inner">
+          <a data-ajax="false" href="#" data-rel="close" class="ui-btn ui-btn-left">X</a><br></br>
 
+          <ul data-role="listview">
+            <li><a data-ajax="false" href="../../index.html" class="ui-btn ui-corner-all ui-icon-home ui-btn-icon-left">Home</a></li>
+            <!-- Begin buitenste collapsible -->
+            <div data-role="collapsible" class="ui-listview-outer" data-collapsed="false">
+              <h2>Hockey<h2>
+                  <ul data-role="listview" data-inset="true">
+                    <li><a data-ajax="false" href="../../hockey/teams.html" class="ui-btn ui-corner-all ui-icon-info ui-btn-icon-left">Teams</a></li>
+                    <li><a data-ajax="false" href="../../hockey/wedstrijdschemas.html" class="ui-btn ui-corner-all ui-icon-info ui-btn-icon-left">Wedstrijdschemas</a></li>
+                    <!-- Begin binnenste collapsible -->
+                    <div data-role="collapsible" class="ui-listview-outer" data-collapsed="false">
+                      <h2>Lidmaatschap</h2>
+                      <ul data-role="listview" data-inset="true" data-collapsed="false">
+                        <li><a data-ajax="false" href="../../hockey/lidmaatschap/informatie.html" class="ui-btn ui-corner-all ui-icon-info ui-btn-icon-left">Informatie</a></li>
+                        <li><a data-ajax="false" href="../../hockey/lidmaatschap/opzeggen.html" class="ui-btn ui-corner-all ui-icon-info ui-btn-icon-left">Opzeggen</a></li>
+                        <li><a data-ajax="false" href="../../hockey/lidmaatschap/voorwaarden.html" class="ui-btn ui-corner-all ui-icon-info ui-btn-icon-left">Algemene Voorwaarden</a></li>
+                      </ul>
+                    </div>
+                    <!-- Einde binnenste collapsible -->
+                  </ul>
+            </div>
+            <!-- Einde buitenste collapsible -->
+            <!-- Begin buitenste collapsible-->
+            <div data-role="collapsible" class="ui-listview-outer">
+              <h2>Organisatie</h2>
+              <div data-role="listview" data-inset="true">
+                <li><a data-ajax="false" href="../../organisatie/huisregels.html" class="ui-btn ui-corner-all ui-icon-star ui-btn-icon-left">Huisregels</a></li>
+                <li><a data-ajax="false" href="../../organisatie/bestuursleden.html" class="ui-btn ui-corner-all ui-icon-star ui-btn-icon-left">Bestuursleden</a></li>
+              </div>
+            </div>
+            <!-- Einde buitenste collapsible-->
+            <li><a data-ajax="false" href="../../sponsors.html" class="ui-btn ui-corner-all ui-icon-phone ui-btn-icon-left">Sponsors</a></li>
+            <li><a data-ajax="false" href="../../contact.html" class="ui-btn ui-corner-all ui-icon-phone ui-btn-icon-left">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+      <!-- Einde hamburgermenu panel-->
+      <!-- Begin tekst -->
       <p>
         <bold>Op deze pagina is informatie te vinden over:</bold><br>
 
-        <a href="#jeugd">Lid worden jeugd</a><br>
+        <a data-ajax="false" href="#jeugd">Lid worden jeugd</a><br>
 
         <span>
           - Aanmelden Junioren van 6 jaar<br>
@@ -28,12 +71,12 @@
           - Wachtlijst<br>
         </span>
 
-        <a href="#senioren">Lid worden senioren</a><br>
+        <a data-ajax="false" href="#senioren">Lid worden senioren</a><br>
         <span>
           - Aanmelden Senioren<br>
           - Aanmelden Trimhockey<br>
         </span>
-        <a href="#gegevens">Gegevens wijzigen</a>
+        <a data-ajax="false" href="#gegevens">Gegevens wijzigen</a>
       </p>
 
       <div id="jeugd">
@@ -69,96 +112,60 @@
         <p>
           <bold>Lid worden senioren</bold><br>
 
-          Aanmelden Senioren
-          Wij hebben binnen onze vereniging nog ruime mogelijkheden voor het plaatsen van senioren bij diverse teams. De competitiewedstrijden voor de senioren worden op zondag gespeeld.
+          Aanmelden Senioren<br>
+          Wij hebben binnen onze vereniging nog ruime mogelijkheden voor het plaatsen van senioren bij diverse teams. De competitiewedstrijden voor de senioren worden op zondag gespeeld.<br><br>
 
-          Heb je interesse dan kun je inschrijven via de site. Het inschrijfformulier vind je onder Aanmelden.
+          Heb je interesse dan kun je inschrijven via de site. Het inschrijfformulier vind je onder Aanmelden.<br><br>
 
-          Wij kunnen ons echter voorstellen dat je meer wilt weten. In dat geval kun je contact opnemen met ons op één van onderstaande e-mailadressen:
+          Wij kunnen ons echter voorstellen dat je meer wilt weten. In dat geval kun je contact opnemen met ons op één van onderstaande e-mailadressen:<br><br>
 
-          - Voor informatie over damesteams: dames.senioren@xenios.nl
+          - Voor informatie over damesteams: dames.senioren@xenios.nl<br>
+          - Voor informatie over herenteams: heren.senioren@xenios.nl<br>
+          - voor informatie over studenten: studenten@xenios.nl<br><br>
 
-          - Voor informatie over herenteams: heren.senioren@xenios.nl
-          - voor informatie over studenten: studenten@xenios.nl
+          - Voor informatie over trimhockey: trimhockey@xenios.nl<br><br>
 
-          - Voor informatie over trimhockey: trimhockey@xenios.nl
+          Voor studenten gelden speciale contributietarieven en voorwaarden. Ga naar de studentenpagina.<br><br>
 
-          Voor studenten gelden speciale contributietarieven en voorwaarden. Ga naar de studentenpagina.
+          Voor algemene informatie over het lidmaatschap van Xenios, kun je mailen naar ledenadministratie@xenios.nl.<br><br>
 
-          Voor algemene informatie over het lidmaatschap van Xenios, kun je mailen naar ledenadministratie@xenios.nl.
+          Voor de desbetreffende financiële aspecten, verwijzen wij naar de informatie onder Contributie.<br><br>
 
-          Voor de desbetreffende financiële aspecten, verwijzen wij naar de informatie onder Contributie.
+          Aanmelden Trimhockey<br>
+          Xenios kent twee lidmaatschappen voor trimhockey, t.w.:<br><br>
 
-          Aanmelden Trimhockey
-          Xenios kent twee lidmaatschappen voor trimhockey, t.w.:
+          - trimhockey met recht om tot maximaal 6 keer mee te spelen in een seniorenteam en<br><br>
 
-          - trimhockey met recht om tot maximaal 6 keer mee te spelen in een seniorenteam en
+          - trimhockey zonder recht van spelen (trainingslid).<br><br>
 
-          - trimhockey zonder recht van spelen (trainingslid).
+          Zie de contributietabel voor de bijbehorende tarieven.<br><br>
 
-          Zie de contributietabel voor de bijbehorende tarieven.
-
-          Er is geen restrictie voor het aanmelden als trimlid.
+          Er is geen restrictie voor het aanmelden als trimlid.<br><br>
 
           Nieuwe trimleden betalen entreegeld. Bij Xenios wordt maar één keer inschrijfgeld berekend.
-          Oud-leden betalen dus géén inschrijfgeld.
+          Oud-leden betalen dus géén inschrijfgeld.<br><br>
 
-          Klik hier voor verdere informatie.
+          Klik <a data-ajax="false" href="https://www.xenios.nl/site/default.asp?option=2502&stcname=trimhockey_algemeen">hier</a> voor verdere informatie.
         </p>
       </div>
       <div id="gegevens">
         <p>
           <bold>Gegevens wijzigen</bold><br>
-          Zoals bekend, gebruiken wij binnen Xenios het systeem LISA.
+          Zoals bekend, gebruiken wij binnen Xenios het systeem LISA.<br><br>
 
-          Hier kunnen de leden hun teamindelingen, wedstrijdschema’s e.d. inzien. Ook onze ledenadministratie wordt hierin gevoerd.
+          Hier kunnen de leden hun teamindelingen, wedstrijdschema’s e.d. inzien. Ook onze ledenadministratie wordt hierin gevoerd.<br><br>
 
-          Voor een goede administratie is het uiteraard noodzakelijk dat wij over de juiste gegevens beschikken.
+          Voor een goede administratie is het uiteraard noodzakelijk dat wij over de juiste gegevens beschikken.<br><br>
 
-          Door in te loggen, met de door ons verstrekte inlogcodes, op je persoonlijke pagina (Mijn Xenios) kun je, bij profiel, je e-mailadres en/of telefoonnummer wijzigen.
+          Door in te loggen, met de door ons verstrekte inlogcodes, op je persoonlijke pagina (Mijn Xenios) kun je, bij profiel, je e-mailadres en/of telefoonnummer wijzigen.<br><br>
 
           Een adreswijziging of wijziging van je IBAN kun je aan ons doorgeven: ledenadministratie@xenios.nl.
         </p>
       </div>
-
-
-      <div data-role="panel" id="panel" data-theme="b" data-display="overlay" data-swipe-close="true" data-position-fixed="true" class="ui-panel ui-panel-position-left">
-        <div class="ui-panel-inner">
-          <a data-ajax="false" href="#" data-rel="close" class="ui-btn ui-btn-left">X</a><br></br>
-
-          <ul data-role="listview">
-            <li><a data-ajax="false" href="../../index.html" class="ui-btn ui-corner-all ui-icon-home ui-btn-icon-left">Home</a></li>
-            <div data-role="collapsible" class="ui-listview-outer">
-              <h2>
-                Hockey
-                <h2>
-                  <ul data-role="listview" data-inset="true">
-                    <li><a data-ajax="false" href="../../hockey/teams.html" class="ui-btn ui-corner-all ui-icon-info ui-btn-icon-left">Teams</a></li>
-                    <li><a data-ajax="false" href="../../hockey/wedstrijdschemas.html" class="ui-btn ui-corner-all ui-icon-info ui-btn-icon-left">Wedstrijdschemas</a></li>
-                    <div data-role="collapsible" class="ui-listview-outer">
-                      <h2>Lidmaatschap</h2>
-                      <ul data-role="listview" data-inset="true">
-                        <li><a data-ajax="false" href="../../hockey/lidmaatschap/informatie.html" class="ui-btn ui-corner-all ui-icon-info ui-btn-icon-left">Informatie</a></li>
-                        <li><a data-ajax="false" href="../../hockey/lidmaatschap/opzeggen.html" class="ui-btn ui-corner-all ui-icon-info ui-btn-icon-left">Opzeggen</a></li>
-                        <li><a data-ajax="false" href="../../hockey/lidmaatschap/voorwaarden.html" class="ui-btn ui-corner-all ui-icon-info ui-btn-icon-left">Algemene Voorwaarden</a></li>
-                      </ul>
-                    </div>
-                  </ul>
-            </div>
-            <div data-role="collapsible" class="ui-listview-outer">
-              <h2>Organisatie</h2>
-              <div data-role="listview" data-inset="true">
-                <li><a data-ajax="false" href="../../organisatie/huisregels.html" class="ui-btn ui-corner-all ui-icon-star ui-btn-icon-left">Huisregels</a></li>
-                <li><a data-ajax="false" href="../../organisatie/bestuursleden.html" class="ui-btn ui-corner-all ui-icon-star ui-btn-icon-left">Bestuursleden</a></li>
-              </div>
-            </div>
-            <li><a data-ajax="false" href="../../sponsors.html" class="ui-btn ui-corner-all ui-icon-phone ui-btn-icon-left">Sponsors</a></li>
-            <li><a data-ajax="false" href="../../contact.html" class="ui-btn ui-corner-all ui-icon-phone ui-btn-icon-left">Contact</a></li>
-          </ul>
-        </div>
-      </div>
+      <!-- Einde tekst -->
     </div>
-
+    <!-- Einde main-->
+    <!-- Begin footer -->
     <div data-role="footer" data-theme="b" data-position="fixed" id="footer">
       <div data-role="navbar">
         <ul>
@@ -169,6 +176,7 @@
         </ul>
       </div>
     </div>
+    <!-- Einde footer -->
   </div>
 </body>
 

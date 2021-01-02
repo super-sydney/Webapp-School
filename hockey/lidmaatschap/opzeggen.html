@@ -3,7 +3,7 @@
 <head>
   <link rel="icon" href="img/xeniosLogo.png">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../../style.css">
   <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
   <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
   <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
@@ -11,34 +11,40 @@
 
 <body>
   <div data-role="page" id="pagefive">
+    <!-- Begin header-->
     <div data-role="header" data-theme="b" id="header">
-      <h1>Contact</h1> <a data-ajax="false" href="#panel" data-role="button" data-theme="b" data-icon="bars" data-iconpos="notext" class="ui-btn-left ui-btn ui-corner-all ui-icon-bars ui-btn-icon-notext ui-shadow ui-btn-inline"></a>
+      <h1>Lidmaatschap Opzeggen</h1> <a data-ajax="false" href="#panel" data-role="button" data-theme="b" data-icon="bars" data-iconpos="notext" class="ui-btn-left ui-btn ui-corner-all ui-icon-bars ui-btn-icon-notext ui-shadow ui-btn-inline"></a>
     </div>
-
+    <!-- Einde header-->
+    <!-- Begin main -->
     <div data-role="main" class="ui-content">
-      <div data-role="panel" id="panel" data-theme="b" data-display="overlay" data-swipe-close="true" data-position-fixed="true" class="ui-panel ui-panel-position-left">
-        <div class="ui-panel-inner">
+      <!-- Begin hamburgermenu panel-->
+      <div data-role="panel" id="panel" data-theme="b" data-display="overlay" data-swipe-close="true" data-position-fixed="true" class="ui-panel ui-panel-position-left" style="width: 325px;">
+        <div class=" ui-panel-inner">
           <a data-ajax="false" href="#" data-rel="close" class="ui-btn ui-btn-left">X</a><br></br>
 
           <ul data-role="listview">
             <li><a data-ajax="false" href="../../index.html" class="ui-btn ui-corner-all ui-icon-home ui-btn-icon-left">Home</a></li>
-            <div data-role="collapsible" class="ui-listview-outer">
-              <h2>
-                Hockey
-                <h2>
+            <!-- Begin buitenste collapsible -->
+            <div data-role="collapsible" class="ui-listview-outer" data-collapsed="false">
+              <h2>Hockey<h2>
                   <ul data-role="listview" data-inset="true">
                     <li><a data-ajax="false" href="../../hockey/teams.html" class="ui-btn ui-corner-all ui-icon-info ui-btn-icon-left">Teams</a></li>
                     <li><a data-ajax="false" href="../../hockey/wedstrijdschemas.html" class="ui-btn ui-corner-all ui-icon-info ui-btn-icon-left">Wedstrijdschemas</a></li>
-                    <div data-role="collapsible" class="ui-listview-outer">
+                    <!-- Begin binnenste collapsible -->
+                    <div data-role="collapsible" class="ui-listview-outer" data-collapsed="false">
                       <h2>Lidmaatschap</h2>
-                      <ul data-role="listview" data-inset="true">
+                      <ul data-role="listview" data-inset="true" data-collapsed="false">
                         <li><a data-ajax="false" href="../../hockey/lidmaatschap/informatie.html" class="ui-btn ui-corner-all ui-icon-info ui-btn-icon-left">Informatie</a></li>
                         <li><a data-ajax="false" href="../../hockey/lidmaatschap/opzeggen.html" class="ui-btn ui-corner-all ui-icon-info ui-btn-icon-left">Opzeggen</a></li>
                         <li><a data-ajax="false" href="../../hockey/lidmaatschap/voorwaarden.html" class="ui-btn ui-corner-all ui-icon-info ui-btn-icon-left">Algemene Voorwaarden</a></li>
                       </ul>
                     </div>
+                    <!-- Einde binnenste collapsible -->
                   </ul>
             </div>
+            <!-- Einde buitenste collapsible -->
+            <!-- Begin buitenste collapsible-->
             <div data-role="collapsible" class="ui-listview-outer">
               <h2>Organisatie</h2>
               <div data-role="listview" data-inset="true">
@@ -46,13 +52,46 @@
                 <li><a data-ajax="false" href="../../organisatie/bestuursleden.html" class="ui-btn ui-corner-all ui-icon-star ui-btn-icon-left">Bestuursleden</a></li>
               </div>
             </div>
+            <!-- Einde buitenste collapsible-->
             <li><a data-ajax="false" href="../../sponsors.html" class="ui-btn ui-corner-all ui-icon-phone ui-btn-icon-left">Sponsors</a></li>
             <li><a data-ajax="false" href="../../contact.html" class="ui-btn ui-corner-all ui-icon-phone ui-btn-icon-left">Contact</a></li>
           </ul>
         </div>
       </div>
-    </div>
+      <!-- Einde hamburgermenu panel-->
+      <!-- Begin tekst-->
+      <p>
+        <bold>Lidmaatschap opzeggen</bold><br>
+        Beëindigen lidmaatschap<br><br>
 
+        In overeenstemming met de statuten geldt als uiterste opzegdatum 30 april van het jaar, zodat op 30 juni het lidmaatschap wordt beëindigd. Bij opzegging na 30 april blijft de volledige contributie voor het volgende seizoen
+        verschuldigd.<br><br><br>
+
+
+
+        * Als je je lidmaatschap voor het volgende seizoen niet wilt voortzetten, zeg dan tijdig, en uiterlijk 30 april, het lidmaatschap op.<br><br>
+
+        * Ben je jonger dan 18 jaar? Dan dient de opzegging door je ouders/verzorgers te gebeuren.<br><br>
+
+        * Opzegging van het lidmaatschap kan alleen via het opzegformulier via de website op Mijn Xenios onder Club, opzeggen via de app kan niet.<br><br>
+
+        * De opzegging wordt altijd per e-mail bevestigd, dit is tevens het bewijs van opzegging. Indien geen bevestiging is ontvangen, is dus niet opgezegd.<br><br>
+
+        * Mededelingen aan coach, trainer of aanvoerder zijn natuurlijk wenselijk, maar worden niet aanvaard als officiële opzegging.<br><br>
+
+        * Ook e-mailberichten aan de ledenadministratie, selectiecommissie of andere vrijwilligers worden niet aanvaard als officiële opzegging.<br><br>
+
+        * Leden die per 30 juni hun lidmaatschap hebben beëindigd, maar bij aanvang van het nieuwe seizoen toch weer lid willen worden, betalen € 50,- administratiekosten.<br><br>
+
+        * Wijzigingen van het lidmaatschap (van of naar trimhockey) dienen vóór 1 mei aan de ledenadministratie te zijn doorgegeven.<br><br>
+
+        * Indien je voor aanvang van de competitie weet niet in staat te zijn de eerste helft of het gehele komende seizoen te spelen in verband met een blessure, kun je vóór 1 september een verzoek indienen voor de blessureregeling. Dit
+        verzoek
+        zal aan het bestuur worden voorgelegd. Meer informatie hierover staat bij contributie.
+      </p>
+      <!-- Einde tekst-->
+    </div>
+    <!-- Begin footer-->
     <div data-role="footer" data-theme="b" data-position="fixed" id="footer">
       <div data-role="navbar">
         <ul>
@@ -63,6 +102,7 @@
         </ul>
       </div>
     </div>
+    <!-- Einde footer-->
   </div>
 </body>
 
