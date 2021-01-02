@@ -1,0 +1,16 @@
+/* de opmaak van de webapp */
+.ui-page{
+	background-image: url(img/hockeyhtmlbannerimage.jpg);
+}
+
+.ui-content{
+	background-color: rgba(0, 0, 0, 0.4)
+}
+
+p, h2, h3{
+	color: #0000;
+}
+
+h1{
+	
+}

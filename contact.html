@@ -1,0 +1,71 @@
+<html>
+
+<head>
+<link rel="icon" href="xeniosLogo.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+  <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+  <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head>
+
+<body>
+  <div data-role="page" id="pagefive">
+    <div data-role="header" data-theme="b" id="header">
+      <h1>Contact</h1> <a data-ajax="false" href="#panel" data-role="button" data-theme="b" data-icon="bars" data-iconpos="notext" class="ui-btn-left ui-btn ui-corner-all ui-icon-bars ui-btn-icon-notext ui-shadow ui-btn-inline"></a>
+    </div>
+
+    <div data-role="main" class="ui-content">
+      <h2>Dit ben ik</h2>
+      <img src="ikke.jpg" style="max-width:20%;" alt="Alpha Male">
+      <div data-role="panel" id="panel" data-theme="b" data-display="overlay" data-swipe-close="true" data-position-fixed="true" class="ui-panel ui-panel-position-left">
+        <div class="ui-panel-inner">
+        <a data-ajax="false" href="#" data-rel="close" class="ui-btn ui-btn-left">X</a><br></br>
+		
+        <ul data-role="listview">
+            <li><a data-ajax="false" href="index.html" class="ui-btn ui-corner-all ui-icon-home ui-btn-icon-left">Home</a></li>
+			
+            <div data-role="collapsible"  class="ui-listview-outer">
+                <h2>Hockey<h2>
+                <ul data-role="listview" data-inset="true">
+                    <li><a data-ajax="false" href="hockey.html" class="ui-btn ui-corner-all ui-icon-info ui-btn-icon-left">Teams</a></li>
+                    <li><a data-ajax="false" href="hockey.html" class="ui-btn ui-corner-all ui-icon-info ui-btn-icon-left">Wedstrijdschemas</a></li>
+                    <div data-role="collapsible"  class="ui-listview-outer">
+                        <h2>Lidmaatschap</h2>
+                        <ul data-role="listview" data-inset="true">
+                            <li><a data-ajax="false" href="hockey.html" class="ui-btn ui-corner-all ui-icon-info ui-btn-icon-left">Informatie</a></li>
+                            <li><a data-ajax="false" href="hockey.html" class="ui-btn ui-corner-all ui-icon-info ui-btn-icon-left">Opzeggen</a></li>
+                            <li><a data-ajax="false" href="hockey.html" class="ui-btn ui-corner-all ui-icon-info ui-btn-icon-left">Algemene Voorwaarden</a></li>
+                        </ul>
+                    </div>
+                </ul>
+            </div>
+			
+            <div data-role="collapsible"  class="ui-listview-outer">
+			<h2>Organisatie</h2>
+			<div data-role="listview" data-inset="true">
+			<li><a data-ajax="false" href="organisatie.html" class="ui-btn ui-corner-all ui-icon-star ui-btn-icon-left">Huisregels</a></li>
+			<li><a data-ajax="false" href="organisatie.html" class="ui-btn ui-corner-all ui-icon-star ui-btn-icon-left">Bestuursleden</a></li>
+			</div>
+			</div>
+            <li><a data-ajax="false" href="sponsors.html" class="ui-btn ui-corner-all ui-icon-phone ui-btn-icon-left">Sponsors</a></li>
+			<li><a data-ajax="false" href="contact.html" class="ui-btn ui-corner-all ui-icon-phone ui-btn-icon-left">Contact</a></li>
+        </ul>
+    </div>
+      </div>
+    </div>
+
+    <div data-role="footer" data-theme="b" data-position="fixed" id="footer">
+      <div data-role="navbar">
+        <ul>
+		<li><a data-ajax="false" href="index.html" class="ui-btn ui-icon-home ui-btn-icon-top ui-corner-all">Home</a></li>
+          <li><a data-ajax="false" href="zoeken.html" class="ui-btn ui-icon-search ui-btn-icon-top ui-corner-all">Zoeken</a></li>
+          <li><a data-ajax="false" href="hockey.html" class="ui-btn ui-icon-info ui-btn-icon-top ui-corner-all">Hockey</a></li>
+          <li><a data-ajax="false" href="organisatie.html" class="ui-btn ui-icon-star ui-btn-icon-top ui-corner-all">Organisatie</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
