@@ -10,18 +10,37 @@
 </head>
 
 <body>
-  <div data-role="page" id="pagefive">
+  <div data-role="page" id="pagetwo">
     <div data-role="header" data-theme="b" id="header">
-      <h1>Wedstrijdschema's</h1> <a data-ajax="false" href="#panel" data-role="button" data-theme="b" data-icon="bars" data-iconpos="notext" class="ui-btn-left ui-btn ui-corner-all ui-icon-bars ui-btn-icon-notext ui-shadow ui-btn-inline"></a>
+      <h1>Bestuursleden</h1> <a data-ajax="false" href="#panel" data-role="button" class="ui-btn ui-corner-all ui-icon-bars ui-btn-icon-notext"></a>
     </div>
 
     <div data-role="main" class="ui-content">
+      <script>
+        function updateSearch() {
+          for (var e, t = document.getElementById("myInput").value.toUpperCase(), n = document.getElementById("myUL").getElementsByTagName("li"), a = 0; a < n.length; a++) - 1 < ((e = n[a].getElementsByTagName("a")[0]).textContent || e.innerText)
+            .toUpperCase().indexOf(t) ? n[a].style.display = "" : n[a].style.display = "none"
+        }
+      </script>
+      <h2>Hier kun je in een lijstje van namen zoeken naar de voornamen van (denkbeeldige) personen.</h2> <input type="text" id="myInput" onkeyup="updateSearch()" placeholder="Search for names...">
+
+      <div>
+        <ul id="myUL" data-role="listview">
+          <li><a data-ajax="false">Adele Amersfoort</a></li>
+          <li><a data-ajax="false">Agnes Axel</a></li>
+          <li><a data-ajax="false">Billy Bobbens</a></li>
+          <li><a data-ajax="false">Bob de Bouwer</a></li>
+          <li><a data-ajax="false">Cinerella Clean</a></li>
+          <li><a data-ajax="false">Calvin Klein</a></li>
+          <li><a data-ajax="false">Chris Maan</a></li>
+        </ul>
+      </div>
       <div data-role="panel" id="panel" data-theme="b" data-display="overlay" data-swipe-close="true" data-position-fixed="true" class="ui-panel ui-panel-position-left">
         <div class="ui-panel-inner">
           <a data-ajax="false" href="#" data-rel="close" class="ui-btn ui-btn-left">X</a><br></br>
 
           <ul data-role="listview">
-            <li><a data-ajax="false" href="../index.html" class="ui-btn ui-corner-all ui-icon-home ui-btn-icon-left">Home</a></li>
+            <li><a data-ajax="false" href="index.html" class="ui-btn ui-corner-all ui-icon-home ui-btn-icon-left">Home</a></li>
             <div data-role="collapsible" class="ui-listview-outer">
               <h2>
                 Hockey
