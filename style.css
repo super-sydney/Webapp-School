@@ -5,7 +5,8 @@
     background-size: cover;
 }
 
-.ui-content p
+.ui-content p,
+form
 {
     font-family: 'sans-serif';
     font-size: 18px;
