@@ -9,8 +9,7 @@
     font-family: 'sans-serif';
     font-size: 18px;
 
-    width: 100%;
-	padding: 15px;
+    padding: 15px;
 
     border-radius: 5px;
     background-color: #fafafa;
@@ -26,18 +25,19 @@ p bold
 
 #textbox
 {
-
-	margin: auto;
-	width: 75%;
-	
+    width: 75%;
+    margin: auto;
 }
 
 .ui-content > h3
 {
     padding: 15px;
-	
-	width: 30%;
 
     border-radius: 5px;
     background-color: #fafafa;
+}
+
+#searchList
+{
+    margin: 2px;
 }

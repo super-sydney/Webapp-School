@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
   <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
   <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+  <script src="../js/search.js"></script>
 </head>
 
 <body>
@@ -65,43 +66,59 @@
         </div>
       </div>
       <!-- Einde hamburgermenu panel -->
-      <!-- Begin script voor zoekfunctie-->
-      <script>
-        function updateSearch() {
-          for (var e, t = document.getElementById("myInput").value.toUpperCase(), n = document.getElementById("myUL").getElementsByTagName("li"), a = 0; a < n.length; a++) - 1 < ((e = n[a].getElementsByTagName("a")[0]).textContent || e.innerText)
-            .toUpperCase().indexOf(t) ? n[a].style.display = "" : n[a].style.display = "none"
-        }
-      </script>
-      <!-- Einde script voor zoekfunctie-->
       <!-- Begin zoeken naar leden-->
-      <h2>Hier kun je in een lijstje van namen zoeken naar de voornamen van (denkbeeldige) personen.</h2> <input type="text" id="myInput" onkeyup="updateSearch()" placeholder="Search for names...">
-
-      <div>
-        <ul id="myUL" data-role="listview">
-          <li><a data-ajax="false">Adele Amersfoort</a></li>
-          <li><a data-ajax="false">Agnes Axel</a></li>
-          <li><a data-ajax="false">Billy Bobbens</a></li>
-          <li><a data-ajax="false">Bob de Bouwer</a></li>
-          <li><a data-ajax="false">Cinerella Clean</a></li>
-          <li><a data-ajax="false">Calvin Klein</a></li>
-          <li><a data-ajax="false">Chris Maan</a></li>
-        </ul>
-      </div>
-      <!-- Einde zoeken naar leden-->
+      <p>
+        <bold>Hier kun je zoeken naar een bestuurslid</bold>
+      </p>
+      <input type="text" id="search" placeholder="Search for names...">
+      <ul id="searchList" data-role="listview">
+        <li>
+          <a data-ajax="false" class="person">
+            <bold>Michiel van Zutphen</bold>
+            <br><i>Voorzitter Bestuur</i>
+          </a>
+        </li>
+        <li>
+          <a data-ajax="false" class="person">
+            <bold>Giorgio Norbiato</bold>
+            <br><i>Voorzitter Bouw</i>
+          </a>
+        </li>
+        <li>
+          <a data-ajax="false" class="person">
+            <bold>Jan-Peter Broek</bold>
+            <br><i>Voorzitter Financiën</i>
+          </a>
+        </li>
+        <li>
+          <a data-ajax="false" class="person">
+            <bold>Stephane Hehemann</bold>
+            <br><i>Communicatie</i>
+          </a>
+        </li>
+        <li>
+          <a data-ajax="false" class="person">
+            <bold>Frank Huitema</bold>
+            <br><i>Comissielid</i>
+          </a>
+        </li>
+      </ul>
     </div>
-    <!-- Einde main -->
-    <!-- Begin footer -->
-    <div data-role="footer" data-theme="b" data-position="fixed" id="footer">
-      <div data-role="navbar">
-        <ul>
-          <li><a data-ajax="false" href="../index.html" class="ui-icon-home ui-btn-icon-top">Home</a></li>
-          <li><a data-ajax="false" href="../hockey/wedstrijdschemas.html" class="ui-icon-grid ui-btn-icon-top">Wedstrijdschema's</a></li>
-          <li><a data-ajax="false" href="../organisatie/huisregels.html" class="ui-icon-bullets ui-btn-icon-top">Huisregels</a></li>
-          <li><a data-ajax="false" href="../contact.html" class="ui-icon-phone ui-btn-icon-top">Contact</a></li>
-        </ul>
-      </div>
+    <!-- Einde zoeken naar leden-->
+  </div>
+  <!-- Einde main -->
+  <!-- Begin footer -->
+  <div data-role="footer" data-theme="b" data-position="fixed" id="footer">
+    <div data-role="navbar">
+      <ul>
+        <li><a data-ajax="false" href="../index.html" class="ui-icon-home ui-btn-icon-top">Home</a></li>
+        <li><a data-ajax="false" href="../hockey/wedstrijdschemas.html" class="ui-icon-grid ui-btn-icon-top">Wedstrijdschema's</a></li>
+        <li><a data-ajax="false" href="../organisatie/huisregels.html" class="ui-icon-bullets ui-btn-icon-top">Huisregels</a></li>
+        <li><a data-ajax="false" href="../contact.html" class="ui-icon-phone ui-btn-icon-top">Contact</a></li>
+      </ul>
     </div>
-    <!-- Einde footer -->
+  </div>
+  <!-- Einde footer -->
   </div>
 </body>
 
