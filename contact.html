@@ -66,32 +66,50 @@
       </div>
       <!-- Einde hamburgermenu panel -->
       <!-- Begin tekst -->
-	  <div id="textbox">
-      <p>
-        <bold>Contact</bold><br>
-        Per seizoen 2019-2020 is SBHC Xenios verhuisd naar:<br><br>
+      <div id="textbox">
+        <p>
+          <bold>Contact</bold><br>
+          Per seizoen 2019-2020 is SBHC Xenios verhuisd naar:<br><br>
 
-        Sportpark Sloten, Sloterweg 1045, 1066 CD Amsterdam<br><br>
+          Sportpark Sloten, Sloterweg 1045, 1066 CD Amsterdam<br><br>
 
-        Postadres: Postbus 9625, 1006 GC Amsterdam<br>
-        Email: info@xenios.nl<br><br>
+          Postadres: Postbus 9625, 1006 GC Amsterdam<br>
+          Email: info@xenios.nl<br><br>
 
-        <bold>Social Media<bold><br>
-            <a href="https://www.facebook.com/xenioshockey/"><img src="img/facebook.svg" width="30px"> Facebook</a>
-            <a href="https://twitter.com/Xenioshockey"><img src="img/twitter.svg" width="30px"> Twitter</a>
-      </p>
-	  </div>
+          <bold>Social Media<bold><br>
+              <a href="https://www.facebook.com/xenioshockey/"><img src="img/facebook.svg" width="30px"> Facebook</a>
+              <a href="https://twitter.com/Xenioshockey"><img src="img/twitter.svg" width="30px"> Twitter</a>
+        </p>
+      </div>
+      <!-- Einde tekst-->
+      <!-- begin formulier -->
+      <h3>Contactformulier</h3>
+      <form action="" method="post">
+        <label for="naam">Vul je naam in:</label>
+        <input name="naam" type="text" value="" data-mini="true" required>
 
+        <label for="email">Vul je e-mail in:</label>
+        <input name="email" type="text" value="" data-mini="true" required>
 
-		<h3>Routebeschrijving</h3>
+        <label for="onderwerp">Vul je onderwerp in:</label>
+        <input name="onderwerp" type="text" value="" data-mini="true" required>
 
-		<div style="overflow:hidden;max-width:100%;width:500px;height:500px;">
-			<div id="embedmap-canvas" style="height:100%; width:100%;max-width:100%;"><iframe style="height:100%;width:100%;border:0;" frameborder="0"
-				src="https://www.google.com/maps/embed/v1/place?q=sportpark+sloten&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"></iframe>
-			</div><a class="googlecode" rel="nofollow" href="https://www.embed-map.com"
-			  id="enable-mapdata">https://www.embed-map.com</a>
-		</div>
-		<!-- Einde tekst-->
+        <label for="opmerkingen">Bericht:</label>
+        <textarea name="opmerkingen" rows="8" cols="40" data-mini="true"></textarea>
+        <label class="ui-hidden-accessible" for="verzend">Verzend:</label>
+        <input type="submit" value="Verzend"></input>
+      </form>
+
+      <!-- Einde formulier -->
+      <!-- begin routebeschrijving -->
+      <h3>Routebeschrijving</h3>
+
+      <div style="overflow:hidden;max-width:100%;width:500px;height:500px;">
+        <div id="embedmap-canvas" style="height:100%; width:100%;max-width:100%;"><iframe style="height:100%;width:100%;border:0;" frameborder="0"
+            src="https://www.google.com/maps/embed/v1/place?q=sportpark+sloten&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"></iframe>
+        </div><a class="googlecode" rel="nofollow" href="https://www.embed-map.com" id="enable-mapdata">https://www.embed-map.com</a>
+      </div>
+      <!-- einde routebeschrijving -->
 
     </div>
 

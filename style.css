@@ -4,7 +4,8 @@
     background-image: url(img/hockeyhtmlbannerimage.jpg);
 }
 
-.ui-content p
+.ui-content p,
+form
 {
     font-family: 'sans-serif';
     font-size: 18px;
