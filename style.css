@@ -9,8 +9,8 @@
     font-family: 'sans-serif';
     font-size: 18px;
 
-    width: 75%;
-    padding: 15px;
+    width: 100%;
+	padding: 15px;
 
     border-radius: 5px;
     background-color: #fafafa;
@@ -24,9 +24,19 @@ p bold
     color: #8fb7dd;
 }
 
+#textbox
+{
+
+	margin: auto;
+	width: 75%;
+	
+}
+
 .ui-content > h3
 {
     padding: 15px;
+	
+	width: 30%;
 
     border-radius: 5px;
     background-color: #fafafa;
