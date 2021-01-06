@@ -2,14 +2,15 @@
 .ui-page
 {
     background-image: url(img/hockeyhtmlbannerimage.jpg);
+    background-size: cover;
 }
 
-.ui-content p,
-form
+.ui-content p
 {
     font-family: 'sans-serif';
     font-size: 18px;
 
+    width: 100%;
     padding: 15px;
 
     border-radius: 5px;
@@ -24,21 +25,40 @@ p bold
     color: #8fb7dd;
 }
 
+p s-bold
+{
+    font-size: 18px;
+}
+
 #textbox
 {
     width: 75%;
     margin: auto;
 }
 
-.ui-content > h3
+#textboxsmall
 {
-    padding: 15px;
+    width: 60%;
+    margin: auto;
+}
 
-    border-radius: 5px;
+#tabel
+{
+    width: 100%;
+
     background-color: #fafafa;
 }
 
 #searchList
 {
     margin: 2px;
+}
+
+.ui-content > h3
+{
+    width: 30%;
+    padding: 15px;
+
+    border-radius: 5px;
+    background-color: #fafafa;
 }
